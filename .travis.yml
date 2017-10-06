@@ -22,6 +22,7 @@ addons:
 before_script:
   - export VCS_TEST_CONFIG='{"paths":{"ci":"\/usr\/bin\/ci","co":"\/usr\/bin\/co","rcs":"\/usr\/bin\/rcs","rcsdiff":"\/usr\/bin\/rcsdiff","rlog":"\/usr\/bin\/rlog","cvs":"\/usr\/bin\/cvs","cvsps":"\/usr\/bin\/cvsps","cvsps_home":"\/tmp","svn":"\/usr\/bin\/svn","diff":"\/usr\/bin\/diff","git":"\/usr\/bin\/git"}}';
   - phpenv config-rm xdebug.ini || echo "XDebug not enabled"
+  - pear channel-discover pear.horde.org
   - pear install channel://pear.horde.org/Horde_Test
   - pear install package.xml
 script:
