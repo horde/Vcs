@@ -23,8 +23,7 @@
   <email>slusarz@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2013-02-15</date>
- <time>18:41:05</time>
+ <date>2017-10-17</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0</api>
@@ -40,13 +39,6 @@
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
-   <dir name="doc">
-    <dir name="Horde">
-     <dir name="Vcs">
-      <file name="COPYING" role="doc" />
-     </dir> <!-- /doc/Horde/Vcs -->
-    </dir> <!-- /doc/Horde -->
-   </dir> <!-- /doc -->
    <dir name="lib">
     <dir name="Horde">
      <dir name="Vcs">
@@ -56,27 +48,27 @@
        <file name="Git.php" role="php" />
        <file name="Rcs.php" role="php" />
        <file name="Svn.php" role="php" />
-      </dir> <!-- //lib/Horde/Vcs/Directory -->
+      </dir> <!-- /lib/Horde/Vcs/Directory -->
       <dir name="File">
        <file name="Base.php" role="php" />
        <file name="Cvs.php" role="php" />
        <file name="Git.php" role="php" />
        <file name="Rcs.php" role="php" />
        <file name="Svn.php" role="php" />
-      </dir> <!-- //lib/Horde/Vcs/File -->
+      </dir> <!-- /lib/Horde/Vcs/File -->
       <dir name="Log">
        <file name="Base.php" role="php" />
        <file name="Cvs.php" role="php" />
        <file name="Git.php" role="php" />
        <file name="Rcs.php" role="php" />
        <file name="Svn.php" role="php" />
-      </dir> <!-- //lib/Horde/Vcs/Log -->
+      </dir> <!-- /lib/Horde/Vcs/Log -->
       <dir name="Patchset">
        <file name="Base.php" role="php" />
        <file name="Cvs.php" role="php" />
        <file name="Git.php" role="php" />
        <file name="Svn.php" role="php" />
-      </dir> <!-- //lib/Horde/Vcs/Patchset -->
+      </dir> <!-- /lib/Horde/Vcs/Patchset -->
       <dir name="QuickLog">
        <file name="Base.php" role="php" />
        <file name="Cvs.php" role="php" />
@@ -91,10 +83,10 @@
       <file name="Patchset.php" role="php" />
       <file name="Rcs.php" role="php" />
       <file name="Svn.php" role="php" />
-     </dir> <!-- //lib/Horde/Vcs -->
+     </dir> <!-- /lib/Horde/Vcs -->
      <file name="Vcs.php" role="php" />
-    </dir> <!-- //lib/Horde -->
-   </dir> <!-- //lib -->
+    </dir> <!-- /lib/Horde -->
+   </dir> <!-- /lib -->
    <dir name="test">
     <dir name="Horde">
      <dir name="Vcs">
@@ -308,6 +300,7 @@
      </dir> <!-- /test/Horde/Vcs -->
     </dir> <!-- /test/Horde -->
    </dir> <!-- /test -->
+   <file name="LICENSE" role="doc" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -350,30 +343,27 @@
  </dependencies>
  <phprelease>
   <filelist>
-   <install as="COPYING" name="doc/Horde/Vcs/COPYING" />
    <install as="Horde/Vcs.php" name="lib/Horde/Vcs.php" />
    <install as="Horde/Vcs/Base.php" name="lib/Horde/Vcs/Base.php" />
    <install as="Horde/Vcs/Cvs.php" name="lib/Horde/Vcs/Cvs.php" />
-   <install as="Horde/Vcs/Exception.php" name="lib/Horde/Vcs/Exception.php" />
-   <install as="Horde/Vcs/Git.php" name="lib/Horde/Vcs/Git.php" />
-   <install as="Horde/Vcs/Patchset.php" name="lib/Horde/Vcs/Patchset.php" />
-   <install as="Horde/Vcs/Rcs.php" name="lib/Horde/Vcs/Rcs.php" />
-   <install as="Horde/Vcs/Svn.php" name="lib/Horde/Vcs/Svn.php" />
    <install as="Horde/Vcs/Directory/Base.php" name="lib/Horde/Vcs/Directory/Base.php" />
    <install as="Horde/Vcs/Directory/Cvs.php" name="lib/Horde/Vcs/Directory/Cvs.php" />
    <install as="Horde/Vcs/Directory/Git.php" name="lib/Horde/Vcs/Directory/Git.php" />
    <install as="Horde/Vcs/Directory/Rcs.php" name="lib/Horde/Vcs/Directory/Rcs.php" />
    <install as="Horde/Vcs/Directory/Svn.php" name="lib/Horde/Vcs/Directory/Svn.php" />
+   <install as="Horde/Vcs/Exception.php" name="lib/Horde/Vcs/Exception.php" />
    <install as="Horde/Vcs/File/Base.php" name="lib/Horde/Vcs/File/Base.php" />
    <install as="Horde/Vcs/File/Cvs.php" name="lib/Horde/Vcs/File/Cvs.php" />
    <install as="Horde/Vcs/File/Git.php" name="lib/Horde/Vcs/File/Git.php" />
    <install as="Horde/Vcs/File/Rcs.php" name="lib/Horde/Vcs/File/Rcs.php" />
    <install as="Horde/Vcs/File/Svn.php" name="lib/Horde/Vcs/File/Svn.php" />
+   <install as="Horde/Vcs/Git.php" name="lib/Horde/Vcs/Git.php" />
    <install as="Horde/Vcs/Log/Base.php" name="lib/Horde/Vcs/Log/Base.php" />
    <install as="Horde/Vcs/Log/Cvs.php" name="lib/Horde/Vcs/Log/Cvs.php" />
    <install as="Horde/Vcs/Log/Git.php" name="lib/Horde/Vcs/Log/Git.php" />
    <install as="Horde/Vcs/Log/Rcs.php" name="lib/Horde/Vcs/Log/Rcs.php" />
    <install as="Horde/Vcs/Log/Svn.php" name="lib/Horde/Vcs/Log/Svn.php" />
+   <install as="Horde/Vcs/Patchset.php" name="lib/Horde/Vcs/Patchset.php" />
    <install as="Horde/Vcs/Patchset/Base.php" name="lib/Horde/Vcs/Patchset/Base.php" />
    <install as="Horde/Vcs/Patchset/Cvs.php" name="lib/Horde/Vcs/Patchset/Cvs.php" />
    <install as="Horde/Vcs/Patchset/Git.php" name="lib/Horde/Vcs/Patchset/Git.php" />
@@ -383,6 +373,9 @@
    <install as="Horde/Vcs/QuickLog/Git.php" name="lib/Horde/Vcs/QuickLog/Git.php" />
    <install as="Horde/Vcs/QuickLog/Rcs.php" name="lib/Horde/Vcs/QuickLog/Rcs.php" />
    <install as="Horde/Vcs/QuickLog/Svn.php" name="lib/Horde/Vcs/QuickLog/Svn.php" />
+   <install as="Horde/Vcs/Rcs.php" name="lib/Horde/Vcs/Rcs.php" />
+   <install as="Horde/Vcs/Svn.php" name="lib/Horde/Vcs/Svn.php" />
+   <install as="LICENSE" name="LICENSE" />
    <install as="Horde/Vcs/AllTests.php" name="test/Horde/Vcs/AllTests.php" />
    <install as="Horde/Vcs/bootstrap.php" name="test/Horde/Vcs/bootstrap.php" />
    <install as="Horde/Vcs/conf.php.dist" name="test/Horde/Vcs/conf.php.dist" />
@@ -390,8 +383,6 @@
    <install as="Horde/Vcs/GitTest.php" name="test/Horde/Vcs/GitTest.php" />
    <install as="Horde/Vcs/phpunit.xml" name="test/Horde/Vcs/phpunit.xml" />
    <install as="Horde/Vcs/RcsTest.php" name="test/Horde/Vcs/RcsTest.php" />
-   <install as="Horde/Vcs/SvnTest.php" name="test/Horde/Vcs/SvnTest.php" />
-   <install as="Horde/Vcs/TestBase.php" name="test/Horde/Vcs/TestBase.php" />
    <install as="Horde/Vcs/repos/cvs/CVSROOT/.#checkoutlist" name="test/Horde/Vcs/repos/cvs/CVSROOT/.#checkoutlist" />
    <install as="Horde/Vcs/repos/cvs/CVSROOT/.#commitinfo" name="test/Horde/Vcs/repos/cvs/CVSROOT/.#commitinfo" />
    <install as="Horde/Vcs/repos/cvs/CVSROOT/.#config" name="test/Horde/Vcs/repos/cvs/CVSROOT/.#config" />
@@ -439,10 +430,10 @@
    <install as="Horde/Vcs/repos/cvs/CVSROOT/val-tags" name="test/Horde/Vcs/repos/cvs/CVSROOT/val-tags" />
    <install as="Horde/Vcs/repos/cvs/CVSROOT/verifymsg" name="test/Horde/Vcs/repos/cvs/CVSROOT/verifymsg" />
    <install as="Horde/Vcs/repos/cvs/CVSROOT/verifymsg,v" name="test/Horde/Vcs/repos/cvs/CVSROOT/verifymsg,v" />
-   <install as="Horde/Vcs/repos/cvs/module/file1,v" name="test/Horde/Vcs/repos/cvs/module/file1,v" />
-   <install as="Horde/Vcs/repos/cvs/module/umläüte,v" name="test/Horde/Vcs/repos/cvs/module/umläüte,v" />
    <install as="Horde/Vcs/repos/cvs/module/Attic/deletedfile1,v" name="test/Horde/Vcs/repos/cvs/module/Attic/deletedfile1,v" />
    <install as="Horde/Vcs/repos/cvs/module/dir1/file1_1,v" name="test/Horde/Vcs/repos/cvs/module/dir1/file1_1,v" />
+   <install as="Horde/Vcs/repos/cvs/module/file1,v" name="test/Horde/Vcs/repos/cvs/module/file1,v" />
+   <install as="Horde/Vcs/repos/cvs/module/umläüte,v" name="test/Horde/Vcs/repos/cvs/module/umläüte,v" />
    <install as="Horde/Vcs/repos/git/config" name="test/Horde/Vcs/repos/git/config" />
    <install as="Horde/Vcs/repos/git/description" name="test/Horde/Vcs/repos/git/description" />
    <install as="Horde/Vcs/repos/git/HEAD" name="test/Horde/Vcs/repos/git/HEAD" />
@@ -457,8 +448,8 @@
    <install as="Horde/Vcs/repos/git/hooks/prepare-commit-msg.sample" name="test/Horde/Vcs/repos/git/hooks/prepare-commit-msg.sample" />
    <install as="Horde/Vcs/repos/git/hooks/update.sample" name="test/Horde/Vcs/repos/git/hooks/update.sample" />
    <install as="Horde/Vcs/repos/git/info/exclude" name="test/Horde/Vcs/repos/git/info/exclude" />
-   <install as="Horde/Vcs/repos/git/objects/00/750edc07d6415dcc07ae0351e9397b0222b7ba" name="test/Horde/Vcs/repos/git/objects/00/750edc07d6415dcc07ae0351e9397b0222b7ba" />
    <install as="Horde/Vcs/repos/git/objects/0c/fbf08886fca9a91cb753ec8734c84fcbe52c9f" name="test/Horde/Vcs/repos/git/objects/0c/fbf08886fca9a91cb753ec8734c84fcbe52c9f" />
+   <install as="Horde/Vcs/repos/git/objects/00/750edc07d6415dcc07ae0351e9397b0222b7ba" name="test/Horde/Vcs/repos/git/objects/00/750edc07d6415dcc07ae0351e9397b0222b7ba" />
    <install as="Horde/Vcs/repos/git/objects/2d/701be7faf94a5fad1942eb763b6c5c6cae540f" name="test/Horde/Vcs/repos/git/objects/2d/701be7faf94a5fad1942eb763b6c5c6cae540f" />
    <install as="Horde/Vcs/repos/git/objects/3b/cf41c666638b371cfa1f12a5daeac3ceec9453" name="test/Horde/Vcs/repos/git/objects/3b/cf41c666638b371cfa1f12a5daeac3ceec9453" />
    <install as="Horde/Vcs/repos/git/objects/5d/80a296076df6e9d630e4fd8e4dd02e4bab4111" name="test/Horde/Vcs/repos/git/objects/5d/80a296076df6e9d630e4fd8e4dd02e4bab4111" />
@@ -474,14 +465,12 @@
    <install as="Horde/Vcs/repos/git/refs/heads/branch1" name="test/Horde/Vcs/repos/git/refs/heads/branch1" />
    <install as="Horde/Vcs/repos/git/refs/heads/master" name="test/Horde/Vcs/repos/git/refs/heads/master" />
    <install as="Horde/Vcs/repos/git/refs/tags/tag1" name="test/Horde/Vcs/repos/git/refs/tags/tag1" />
+   <install as="Horde/Vcs/repos/rcs/dir1/file1_1" name="test/Horde/Vcs/repos/rcs/dir1/file1_1" />
+   <install as="Horde/Vcs/repos/rcs/dir1/file1_1,v" name="test/Horde/Vcs/repos/rcs/dir1/file1_1,v" />
    <install as="Horde/Vcs/repos/rcs/file1" name="test/Horde/Vcs/repos/rcs/file1" />
    <install as="Horde/Vcs/repos/rcs/file1,v" name="test/Horde/Vcs/repos/rcs/file1,v" />
    <install as="Horde/Vcs/repos/rcs/umläüte" name="test/Horde/Vcs/repos/rcs/umläüte" />
    <install as="Horde/Vcs/repos/rcs/umläüte,v" name="test/Horde/Vcs/repos/rcs/umläüte,v" />
-   <install as="Horde/Vcs/repos/rcs/dir1/file1_1" name="test/Horde/Vcs/repos/rcs/dir1/file1_1" />
-   <install as="Horde/Vcs/repos/rcs/dir1/file1_1,v" name="test/Horde/Vcs/repos/rcs/dir1/file1_1,v" />
-   <install as="Horde/Vcs/repos/svn/format" name="test/Horde/Vcs/repos/svn/format" />
-   <install as="Horde/Vcs/repos/svn/README.txt" name="test/Horde/Vcs/repos/svn/README.txt" />
    <install as="Horde/Vcs/repos/svn/conf/authz" name="test/Horde/Vcs/repos/svn/conf/authz" />
    <install as="Horde/Vcs/repos/svn/conf/passwd" name="test/Horde/Vcs/repos/svn/conf/passwd" />
    <install as="Horde/Vcs/repos/svn/conf/svnserve.conf" name="test/Horde/Vcs/repos/svn/conf/svnserve.conf" />
@@ -491,10 +480,6 @@
    <install as="Horde/Vcs/repos/svn/db/fsfs.conf" name="test/Horde/Vcs/repos/svn/db/fsfs.conf" />
    <install as="Horde/Vcs/repos/svn/db/min-unpacked-rev" name="test/Horde/Vcs/repos/svn/db/min-unpacked-rev" />
    <install as="Horde/Vcs/repos/svn/db/rep-cache.db" name="test/Horde/Vcs/repos/svn/db/rep-cache.db" />
-   <install as="Horde/Vcs/repos/svn/db/txn-current" name="test/Horde/Vcs/repos/svn/db/txn-current" />
-   <install as="Horde/Vcs/repos/svn/db/txn-current-lock" name="test/Horde/Vcs/repos/svn/db/txn-current-lock" />
-   <install as="Horde/Vcs/repos/svn/db/uuid" name="test/Horde/Vcs/repos/svn/db/uuid" />
-   <install as="Horde/Vcs/repos/svn/db/write-lock" name="test/Horde/Vcs/repos/svn/db/write-lock" />
    <install as="Horde/Vcs/repos/svn/db/revprops/0/0" name="test/Horde/Vcs/repos/svn/db/revprops/0/0" />
    <install as="Horde/Vcs/repos/svn/db/revprops/0/1" name="test/Horde/Vcs/repos/svn/db/revprops/0/1" />
    <install as="Horde/Vcs/repos/svn/db/revprops/0/2" name="test/Horde/Vcs/repos/svn/db/revprops/0/2" />
@@ -505,6 +490,11 @@
    <install as="Horde/Vcs/repos/svn/db/revs/0/2" name="test/Horde/Vcs/repos/svn/db/revs/0/2" />
    <install as="Horde/Vcs/repos/svn/db/revs/0/3" name="test/Horde/Vcs/repos/svn/db/revs/0/3" />
    <install as="Horde/Vcs/repos/svn/db/revs/0/4" name="test/Horde/Vcs/repos/svn/db/revs/0/4" />
+   <install as="Horde/Vcs/repos/svn/db/txn-current" name="test/Horde/Vcs/repos/svn/db/txn-current" />
+   <install as="Horde/Vcs/repos/svn/db/txn-current-lock" name="test/Horde/Vcs/repos/svn/db/txn-current-lock" />
+   <install as="Horde/Vcs/repos/svn/db/uuid" name="test/Horde/Vcs/repos/svn/db/uuid" />
+   <install as="Horde/Vcs/repos/svn/db/write-lock" name="test/Horde/Vcs/repos/svn/db/write-lock" />
+   <install as="Horde/Vcs/repos/svn/format" name="test/Horde/Vcs/repos/svn/format" />
    <install as="Horde/Vcs/repos/svn/hooks/post-commit.tmpl" name="test/Horde/Vcs/repos/svn/hooks/post-commit.tmpl" />
    <install as="Horde/Vcs/repos/svn/hooks/post-lock.tmpl" name="test/Horde/Vcs/repos/svn/hooks/post-lock.tmpl" />
    <install as="Horde/Vcs/repos/svn/hooks/post-revprop-change.tmpl" name="test/Horde/Vcs/repos/svn/hooks/post-revprop-change.tmpl" />
@@ -516,6 +506,9 @@
    <install as="Horde/Vcs/repos/svn/hooks/start-commit.tmpl" name="test/Horde/Vcs/repos/svn/hooks/start-commit.tmpl" />
    <install as="Horde/Vcs/repos/svn/locks/db-logs.lock" name="test/Horde/Vcs/repos/svn/locks/db-logs.lock" />
    <install as="Horde/Vcs/repos/svn/locks/db.lock" name="test/Horde/Vcs/repos/svn/locks/db.lock" />
+   <install as="Horde/Vcs/repos/svn/README.txt" name="test/Horde/Vcs/repos/svn/README.txt" />
+   <install as="Horde/Vcs/SvnTest.php" name="test/Horde/Vcs/SvnTest.php" />
+   <install as="Horde/Vcs/TestBase.php" name="test/Horde/Vcs/TestBase.php" />
   </filelist>
  </phprelease>
  <changelog>
@@ -561,7 +554,7 @@
     <release>beta</release>
     <api>beta</api>
    </stability>
-   <date>2013-02-15</date>
+   <date>2017-10-17</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * [jan] Mark PHP 7 as supported.
