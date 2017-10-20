@@ -23,7 +23,7 @@
   <email>slusarz@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-20</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0</api>
@@ -293,7 +293,6 @@
       <file name="conf.php.dist" role="test" />
       <file name="CvsTest.php" role="test" />
       <file name="GitTest.php" role="test" />
-      <file name="phpunit.xml" role="test" />
       <file name="RcsTest.php" role="test" />
       <file name="SvnTest.php" role="test" />
       <file name="TestBase.php" role="test" />
@@ -381,7 +380,6 @@
    <install as="Horde/Vcs/conf.php.dist" name="test/Horde/Vcs/conf.php.dist" />
    <install as="Horde/Vcs/CvsTest.php" name="test/Horde/Vcs/CvsTest.php" />
    <install as="Horde/Vcs/GitTest.php" name="test/Horde/Vcs/GitTest.php" />
-   <install as="Horde/Vcs/phpunit.xml" name="test/Horde/Vcs/phpunit.xml" />
    <install as="Horde/Vcs/RcsTest.php" name="test/Horde/Vcs/RcsTest.php" />
    <install as="Horde/Vcs/repos/cvs/CVSROOT/.#checkoutlist" name="test/Horde/Vcs/repos/cvs/CVSROOT/.#checkoutlist" />
    <install as="Horde/Vcs/repos/cvs/CVSROOT/.#commitinfo" name="test/Horde/Vcs/repos/cvs/CVSROOT/.#commitinfo" />
@@ -554,7 +552,7 @@
     <release>beta</release>
     <api>beta</api>
    </stability>
-   <date>2017-10-17</date>
+   <date>2017-10-20</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * [jan] Mark PHP 7 as supported.
