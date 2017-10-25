@@ -1,5 +1,5 @@
 {
-    "name": "horde/horde-vcs",
+    "name": "horde/vcs",
     "description": "Version Control API",
     "type": "library",
     "homepage": "https://pear.horde.org",
@@ -22,7 +22,7 @@
         }
     ],
     "version": "1.0.0alpha1",
-    "time": "2013-02-15",
+    "time": "2017-10-20",
     "repositories": [
         {
             "type": "pear",
