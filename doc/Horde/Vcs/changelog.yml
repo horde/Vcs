@@ -1,0 +1,38 @@
+---
+1.0.0alpha1:
+  api: 1.0.0
+  state:
+    release: beta
+    api: beta
+  date: 2017-10-20
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |
+    [jan] Mark PHP 7 as supported.
+    [mms] Fix generating cache ID in base File object.
+0.0.4:
+  api: 0.0.4
+  state:
+    release: beta
+    api: beta
+  date: 2006-05-08
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |
+    Converted to package.xml 2.0 for pear.horde.org
+    Fix subversion diffs on files with spaces (helly@php.net, Bug #5244)
+    Pass username and password to the SVN client if set (duck@obala.net, Request #5958)
+0.0.3:
+  api: 0.0.3
+  state:
+    release: beta
+    api: beta
+  date: 2004-01-01
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |
+    Fix caching of Patchset objects.
+    Add a VC_Patchset parent class for common Patchset functionality.
