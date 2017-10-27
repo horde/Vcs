@@ -522,8 +522,8 @@
    <date>2004-01-01</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
-- Fix caching of Patchset objects.
-- Add a VC_Patchset parent class for common Patchset functionality.
+* Fix caching of Patchset objects.
+* Add a VC_Patchset parent class for common Patchset functionality.
    </notes>
   </release>
   <release>
