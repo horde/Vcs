@@ -9,22 +9,22 @@ list: dev
 type: library
 authors:
   -
-    name: Chuck Hagenbuch
-    user: chuck
-    email: chuck@horde.org
-    active: true
-    role: lead
-  -
     name: Jan Schneider
     user: jan
     email: jan@horde.org
     active: true
     role: lead
   -
+    name: Chuck Hagenbuch
+    user: chuck
+    email: chuck@horde.org
+    active: false
+    role: lead
+  -
     name: Michael Slusarz
     user: slusarz
     email: slusarz@horde.org
-    active: true
+    active: false
     role: lead
 version:
   release: 1.0.0alpha1
