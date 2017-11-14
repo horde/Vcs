@@ -301,7 +301,6 @@
       <file name="conf.php.dist" role="test" />
       <file name="CvsTest.php" role="test" />
       <file name="GitTest.php" role="test" />
-      <file name="phpunit.xml" role="test" />
       <file name="RcsTest.php" role="test" />
       <file name="SvnTest.php" role="test" />
       <file name="TestBase.php" role="test" />
@@ -389,7 +388,6 @@
    <install as="Horde/Vcs/conf.php.dist" name="test/Horde/Vcs/conf.php.dist" />
    <install as="Horde/Vcs/CvsTest.php" name="test/Horde/Vcs/CvsTest.php" />
    <install as="Horde/Vcs/GitTest.php" name="test/Horde/Vcs/GitTest.php" />
-   <install as="Horde/Vcs/phpunit.xml" name="test/Horde/Vcs/phpunit.xml" />
    <install as="Horde/Vcs/RcsTest.php" name="test/Horde/Vcs/RcsTest.php" />
    <install as="Horde/Vcs/SvnTest.php" name="test/Horde/Vcs/SvnTest.php" />
    <install as="Horde/Vcs/TestBase.php" name="test/Horde/Vcs/TestBase.php" />
