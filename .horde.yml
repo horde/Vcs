@@ -2,7 +2,7 @@
 id: Vcs
 name: Vcs
 full: Version control client library
-description: >
+description: >-
   The Horde_Vcs package provides a generalized API to multiple version control
   systems.
 list: dev
