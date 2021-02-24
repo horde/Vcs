@@ -4,13 +4,7 @@
  <channel>pear.horde.org</channel>
  <extends>VC</extends>
  <summary>Version control client library</summary>
- <description>The Horde_Vcs package provides a generalized API to multiple version control systems.</description>
- <lead>
-  <name>Chuck Hagenbuch</name>
-  <user>chuck</user>
-  <email>chuck@horde.org</email>
-  <active>yes</active>
- </lead>
+ <description>A library that provides a generalized API to multiple version control systems.</description>
  <lead>
   <name>Jan Schneider</name>
   <user>jan</user>
@@ -18,19 +12,25 @@
   <active>yes</active>
  </lead>
  <lead>
+  <name>Chuck Hagenbuch</name>
+  <user>chuck</user>
+  <email>chuck@horde.org</email>
+  <active>no</active>
+ </lead>
+ <lead>
   <name>Michael Slusarz</name>
   <user>slusarz</user>
   <email>slusarz@horde.org</email>
-  <active>yes</active>
+  <active>no</active>
  </lead>
- <date>2017-11-11</date>
+ <date>2021-02-24</date>
  <version>
   <release>1.0.0alpha1</release>
-  <api>1.0.0</api>
+  <api>1.0.0alpha1</api>
  </version>
  <stability>
-  <release>beta</release>
-  <api>beta</api>
+  <release>alpha</release>
+  <api>alpha</api>
  </stability>
  <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
  <notes>
@@ -554,13 +554,13 @@
   <release>
    <version>
     <release>1.0.0alpha1</release>
-    <api>1.0.0</api>
+    <api>1.0.0alpha1</api>
    </version>
    <stability>
-    <release>beta</release>
-    <api>beta</api>
+    <release>alpha</release>
+    <api>alpha</api>
    </stability>
-   <date>2017-11-11</date>
+   <date>2021-02-24</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * [jan] Mark PHP 7 as supported.

@@ -1,6 +1,6 @@
-----------------
-v1.0.0alpha1-git
-----------------
+------------
+v1.0.0alpha1
+------------
 
 [jan] Mark PHP 7 as supported.
 [mms] Fix generating cache ID in base File object.

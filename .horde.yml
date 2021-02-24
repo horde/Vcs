@@ -2,9 +2,7 @@
 id: Vcs
 name: Vcs
 full: Version control client library
-description: >-
-  A library that provides a generalized API to multiple version control
-  systems.
+description: A library that provides a generalized API to multiple version control systems.
 list: dev
 type: library
 authors:
@@ -28,10 +26,10 @@ authors:
     role: lead
 version:
   release: 1.0.0alpha1
-  api: 1.0.0
+  api: 1.0.0alpha1
 state:
-  release: beta
-  api: beta
+  release: alpha
+  api: alpha
 license:
   identifier: LGPL-2.1
   uri: http://www.horde.org/licenses/lgpl21
