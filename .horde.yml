@@ -35,12 +35,12 @@ license:
   uri: http://www.horde.org/licenses/lgpl21
 dependencies:
   required:
-    php: ^5.3 || ^7
-    pear:
-      pear.horde.org/Horde_Util: ^2
+    php: ^7
+    composer:
+      horde/util: ^3
     ext:
       pcre: '*'
   optional:
-    pear:
-      pear.horde.org/Horde_Cache: ^2
-      pear.horde.org/Horde_Test: ^2.1
+    composer:
+      horde/cache: ^3
+      horde/test: ^3
