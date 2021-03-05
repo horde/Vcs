@@ -8,8 +8,9 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |+
-    
+  notes: |
+    [rla] Upgraded unit test suite to PHPUnit 9 standards.
+    |+
 1.0.0alpha3:
   api: 1.0.0alpha1
   state:

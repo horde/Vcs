@@ -6,7 +6,6 @@
 nbproject/
 *~
 .#*
-!/test/Horde/Vcs/repos/cvs/CVSROOT/.#*
 *.bak
 *.orig
 *.rej
@@ -27,3 +26,11 @@ run-tests.log
 /test/*/*/*/*.exp
 /test/*/*/*/*.log
 /test/*/*/*/*.out
+
+# Ignore test harness / quality tools output
+.php-cs-fixer.cache
+.phpunit.cache/
+
+# ignore composer artifacts
+composer.lock
+vendor/

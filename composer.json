@@ -1,10 +1,9 @@
 {
-    "minimum-stability": "dev",
     "name": "horde/vcs",
     "description": "Version control client library",
     "type": "library",
     "homepage": "https://www.horde.org",
-    "license": "LGPL-2.1",
+    "license": "LGPL-2.1-only",
     "authors": [
         {
             "name": "Jan Schneider",
@@ -22,25 +21,41 @@
             "role": "lead"
         }
     ],
-    "time": "2021-03-13",
+    "time": "2022-08-30",
     "repositories": [
         {
             "type": "composer",
-            "url": "https://horde-satis.maintaina.com/"
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
-        "php": "^7",
-        "horde/util": "^3 || dev-FRAMEWORK_6_0",
-        "ext-pcre": "*"
+        "php": "^7.4 || ^8",
+        "horde/util": "^3 || dev-FRAMEWORK_6_0"
+    },
+    "require-dev": {
+        "horde/test": "^3 || dev-FRAMEWORK_6_0",
+        "horde/cache": "^3 || dev-FRAMEWORK_6_0"
     },
     "suggest": {
-        "horde/cache": "^3 || dev-FRAMEWORK_6_0",
-        "horde/test": "^3 || dev-FRAMEWORK_6_0"
+        "horde/cache": "^3 || dev-FRAMEWORK_6_0"
     },
     "autoload": {
         "psr-0": {
             "Horde_Vcs": "lib/"
+        },
+        "psr-4": {
+            "Horde\\Vcs\\": "src/"
         }
-    }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Horde\\Vcs\\Test\\": "test/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "horde/horde-installer-plugin": true
+        }
+    },
+    "minimum-stability": "dev"
 }
