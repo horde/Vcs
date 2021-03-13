@@ -1,7 +1,7 @@
 {
     "name": "horde/vcs",
     "description": "Version control client library",
-    "type": "horde-library",
+    "type": "library",
     "homepage": "https://www.horde.org",
     "license": "LGPL-2.1",
     "authors": [
@@ -21,8 +21,7 @@
             "role": "lead"
         }
     ],
-    "version": "1.0.0alpha3",
-    "time": "2021-02-24",
+    "time": "2021-03-13",
     "repositories": [
         {
             "type": "composer",
@@ -30,7 +29,6 @@
         }
     ],
     "require": {
-        "horde/horde-installer-plugin": "*",
         "php": "^7",
         "horde/util": "^3",
         "ext-pcre": "*"
