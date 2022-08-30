@@ -20,5 +20,17 @@ namespace Horde\Vcs\Git;
  */
 class GitClientFactory
 {
-    
+    /**
+     * Constructor.
+     *
+     * @param string $gitPath The path to the git client binary. Leave empty for auto-detection.
+     */
+    public function __construct(private string $gitBinary = '')
+    {
+    }
+
+    public function createClient(): GitClient
+    {
+        return new GitClient($this->gitBinary);
+    }
 }

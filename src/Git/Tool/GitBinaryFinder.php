@@ -46,6 +46,7 @@ class GitBinaryFinder
 
     public function find(): string
     {
+        // TODO: Run which first before checking well known locations
         foreach ($this->defaultLocations as $location) {
             if (file_exists($location)) {
                 return $location;

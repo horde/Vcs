@@ -20,5 +20,23 @@ namespace Horde\Vcs\Git;
  */
 class GitClient implements GitClientInterface
 {
+    public function __construct(private string $gitBinary, private string $localRepository = '')
+    {
+    }
 
+    /**
+     * Configure a local repository to use in further commands
+     *
+     * @param string $localRepository
+     * @return void
+     */
+    public function selectLocalRepository(string $localRepository): self
+    {
+        return $this;
+    }
+
+    public function cloneRemoteRepository(string $remoteUri)
+    {
+
+    }
 }
