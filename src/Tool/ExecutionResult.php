@@ -10,7 +10,9 @@
  */
 declare(strict_types=1);
 
-namespace Horde\Vcs\Tools;
+namespace Horde\Vcs\Tool;
+
+use Stringable;
 
 /**
  * The results of an executed command
@@ -20,9 +22,44 @@ namespace Horde\Vcs\Tools;
  * @author   Ralf Lang <ralf.lang@ralf-lang.de>
  * @copyright 2008-2022 Horde LLC
  */
-class ExecutionResult
+class ExecutionResult implements Stringable
 {    
-    public function __construct(private string $output = '', private int $code = 0)
+    public function __construct(private array $output = [], private int $code = 0)
     {
+    }
+
+    /**
+     * The execution's output as a string
+     *
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return $this->getOutputString();
+    }
+
+    /**
+     * The execution's output as a string
+     *
+     * @return string
+     */
+    public function getOutputString(): string
+    {
+        return implode('\n', $this->output);
+    }
+
+    /**
+     * The execution's output as potentially empty array of strings
+     *
+     * @return string[]
+     */
+    public function getOutputArray(): array
+    {
+        return $this->output;
+    }
+
+    public function getReturnCode(): int
+    {
+        return $this->code;
     }
 }

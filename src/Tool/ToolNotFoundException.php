@@ -24,13 +24,4 @@ use RuntimeException;
  */
 class ToolNotFoundException extends RuntimeException
 {
-    /**
-     * Run the command
-     *
-     * @return string
-     */
-    public function __invoke($cmd): string
-    {
-                
-    }
 }

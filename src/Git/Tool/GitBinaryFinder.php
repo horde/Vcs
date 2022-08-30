@@ -12,6 +12,9 @@ declare(strict_types=1);
 
 namespace Horde\Vcs\Git\Tool;
 
+use Horde\Vcs\Tool\Executor;
+use Horde\Vcs\Tools\ToolNotFoundException;
+
 /**
  * Assemble a git client from necessary parts
  *
@@ -37,17 +40,17 @@ class GitBinaryFinder
      * @return string
      */
     public function __invoke(): string
-    {
-                
+    {    
+        return $this->find();
     }
 
     public function find(): string
     {
-
-    }
-
-    public function runWhich(): string
-    {
-
+        foreach ($this->defaultLocations as $location) {
+            if (file_exists($location)) {
+                return $location;
+            }
+        }
+        throw new ToolNotFoundException('git command not found!');
     }
 }

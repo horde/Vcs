@@ -10,7 +10,7 @@
  */
 declare(strict_types=1);
 
-namespace Horde\Vcs\Tools;
+namespace Horde\Vcs\Tool;
 
 /**
  * Run a command in shell context
@@ -20,15 +20,19 @@ namespace Horde\Vcs\Tools;
  * @author   Ralf Lang <ralf.lang@ralf-lang.de>
  * @copyright 2008-2022 Horde LLC
  */
-class ShellExecutor
+class Executor
 {
     /**
      * Run the command
      *
-     * @return string
+     * @return ExecutionResult
      */
-    public function __invoke($cmd): string
+    public function __invoke(string $cmd, string $throwOnNonNull = ''): ExecutionResult
     {
-                
+        exec($cmd, $outputArr = [], $returnCode = 0);
+        if ($throwOnNonNull && $returnCode) {
+            throw new $throwOnNonNull('Command returned non-null value: ' . $cmd .  "\n"  . array_shift($outputArr), $returnCode);
+        }
+        return new ExecutionResult($outputArr, $returnCode);
     }
 }
