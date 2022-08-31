@@ -22,44 +22,33 @@ use Stringable;
  * @author   Ralf Lang <ralf.lang@ralf-lang.de>
  * @copyright 2008-2022 Horde LLC
  */
-class ExecutionResult implements ExecutionResultInterface
+interface ExecutionResultInterface extends Stringable
 {
-    public function __construct(private array $output = [], private int $code = 0)
-    {
-    }
+    /**
+     * The execution's output as a string - Stringable interface
+     *
+     * @return string
+     */
+    public function __toString(): string;
 
     /**
      * The execution's output as a string
      *
      * @return string
      */
-    public function __toString(): string
-    {
-        return $this->getOutputString();
-    }
-
-    /**
-     * The execution's output as a string
-     *
-     * @return string
-     */
-    public function getOutputString(): string
-    {
-        return implode('\n', $this->output);
-    }
+    public function getOutputString(): string;
 
     /**
      * The execution's output as potentially empty array of strings
      *
      * @return string[]
      */
-    public function getOutputArray(): array
-    {
-        return $this->output;
-    }
+    public function getOutputArray(): array;
 
-    public function getReturnCode(): int
-    {
-        return $this->code;
-    }
+    /**
+     * The return code of an execution or null
+     *
+     * @return integer
+     */
+    public function getReturnCode(): int;
 }

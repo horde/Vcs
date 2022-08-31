@@ -16,7 +16,7 @@ use RuntimeException;
 
 /**
  * Run a command in shell context
- * 
+ *
  * TODO: Figure where we can put this for reuse without creating an ever-growing blob
  *
  * @author   Ralf Lang <ralf.lang@ralf-lang.de>

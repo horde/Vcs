@@ -25,13 +25,13 @@ class GitBinaryFinder
 {
     /**
      * Default locations to look for the git client
-     * 
+     *
      * @var string[]
      */
     private array $defaultLocations = [
         '/usr/bin/git',
         '/bin/git',
-        '/usr/local/bin/git'
+        '/usr/local/bin/git',
     ];
 
     /**
@@ -40,7 +40,7 @@ class GitBinaryFinder
      * @return string
      */
     public function __invoke(): string
-    {    
+    {
         return $this->find();
     }
 

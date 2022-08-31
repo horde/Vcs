@@ -12,6 +12,9 @@ declare(strict_types=1);
 
 namespace Horde\Vcs\Git;
 
+use Horde\Log\LoggerInterface;
+use Psr\Log\NullLogger;
+
 /**
  * Public facade to programmatically use git
  *
@@ -20,7 +23,13 @@ namespace Horde\Vcs\Git;
  */
 class GitClient implements GitClientInterface
 {
-    public function __construct(private string $gitBinary, private string $localRepository = '')
+    /**
+     * Constructor.
+     *
+     * @param GitClientConfig $config Settings for the client
+     * @param LoggerInterface $logger PSR-3 Logger, defaults to null logger
+     */
+    public function __construct(private GitClientConfig $config, private LoggerInterface $logger = new NullLogger())
     {
     }
 
@@ -37,6 +46,6 @@ class GitClient implements GitClientInterface
 
     public function cloneRemoteRepository(string $remoteUri)
     {
-
+        // TODO: Credential handling
     }
 }

@@ -39,6 +39,7 @@ dependencies:
     composer:
     ## Only one method in cvs and one test require one call for horde/util
       horde/util: ^3
+      psr/log: ^3
   optional:
     composer:
       horde/cache: ^3
@@ -46,3 +47,4 @@ dependencies:
     composer:
       horde/test: ^3
       horde/cache: ^3
+      horde/log: ^3

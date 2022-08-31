@@ -23,11 +23,8 @@ use Psr\Log\NullLogger;
  * @author   Ralf Lang <ralf.lang@ralf-lang.de>
  * @copyright 2008-2022 Horde LLC
  */
-class Executor
+interface ExecutorInterface
 {
-    public function __construct(private LoggerInterface $logger = new NullLogger())
-    {
-    }
     /**
      * Run the command
      *
@@ -37,12 +34,5 @@ class Executor
      *
      * @return ExecutionResult
      */
-    public function __invoke(string $cmd, string $throwOnNonZero = ''): ExecutionResult
-    {
-        exec($cmd, $outputArr = [], $returnCode = 0);
-        if ($throwOnNonZero && $returnCode) {
-            throw new $throwOnNonZero('Command returned non-null value: ' . $cmd .  "\n"  . array_shift($outputArr), $returnCode);
-        }
-        return new ExecutionResult($outputArr, $returnCode);
-    }
+    public function __invoke(string $cmd, string $throwOnNonZero = ''): ExecutionResult;
 }
