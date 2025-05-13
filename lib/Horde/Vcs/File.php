@@ -9,7 +9,7 @@
  *
  * @package Vcs
  */
-interface class Horde_Vcs_File
+interface Horde_Vcs_File
 {
     public function setRepository($rep);
 
