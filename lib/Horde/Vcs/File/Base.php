@@ -9,7 +9,7 @@
  *
  * @package Vcs
  */
-abstract class Horde_Vcs_File_Base
+abstract class Horde_Vcs_File_Base implements Horde_Vcs_File
 {
     /**
      * The current driver.
