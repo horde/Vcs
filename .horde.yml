@@ -25,7 +25,7 @@ authors:
     active: false
     role: lead
 version:
-  release: 1.0.0alpha4
+  release: 1.0.0-alpha5
   api: 1.0.0alpha1
 state:
   release: alpha
@@ -37,7 +37,6 @@ dependencies:
   required:
     php: ^7.4 || ^8
     composer:
-    ## Only one method in cvs and one test require one call for horde/util
       horde/util: ^3
       psr/log: ^3
   optional:
@@ -48,3 +47,4 @@ dependencies:
       horde/test: ^3
       horde/cache: ^3
       horde/log: ^3
+vendor: horde

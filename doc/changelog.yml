@@ -43,6 +43,27 @@
   notes: |
     [jan] Mark PHP 7 as supported.
     [mms] Fix generating cache ID in base File object.
+1.0.0-alpha5:
+  api: 1.0.0-alpha5
+  state:
+    release: alpha
+    api: alpha
+  date: 2026-03-07
+  license:
+    identifier: LGPL-2.1-only
+    uri: https://spdx.org/licenses/LGPL-2.1-only.html
+  notes: |-
+    syntax
+    Remove legacy test loaders
+    feat: Add interface Horde_Vcs_File to all Horde_Vcs_File_* implementations
+    Allow dev branch
+    automatic generation of composer.json - [ci skip]
+    Flesh out the client factory2
+    git client basics
+    automatic generation of composer.json - [ci skip]
+    Implement git command finder
+    Upgrade unit tests and metadata
+    Development mode for Vcs-1.0.0alpha4
 0.0.4:
   api: 0.0.4
   state:
